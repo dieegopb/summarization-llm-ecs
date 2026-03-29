@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  text-summarizer:
+    build: .
+    env_file:
+      - .env
+    environment:
+      - PYTHONPATH=/app
+    # AS LINHAS QUE FORÇAVAM O LOCALSTACK FORAM REMOVIDAS DAQUI!
